@@ -119,6 +119,9 @@
 			.replace(/(\s|;|\}|^|\{)out\+='';/g, '$1').replace(/\+''/g, '')
 			.replace(/(\s|;|\}|^|\{)out\+=''\+/g,'$1out+=');
 
+		// MODIFY: remove spaces between tags
+		str = str.replace(/>\s+</g, '><');
+
 		if (needhtmlencode && c.selfcontained) {
 			str = "String.prototype.encodeHTML=(" + encodeHTMLSource.toString() + "());" + str;
 		}

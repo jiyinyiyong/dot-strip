@@ -1,5 +1,5 @@
 {
-  "name": "dot",
+  "name": "dot-strip",
   "description": "Concise and fast javascript templating compatible with nodejs and other javascript environments",
   "keywords": [
     "template",
@@ -7,7 +7,7 @@
     "simple",
     "templating"
   ],
-  "version": "1.0.1",
+  "version": "1.0.1-1",
   "main": "index",
   "bin": {
     "dottojs": "./bin/dot-packer"
